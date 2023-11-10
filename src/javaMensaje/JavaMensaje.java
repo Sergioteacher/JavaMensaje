@@ -3,6 +3,8 @@ package javaMensaje;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
 
 public class JavaMensaje {
 
@@ -39,6 +41,10 @@ public class JavaMensaje {
 		frmEjemploRemoto.setTitle("Ejemplo remoto");
 		frmEjemploRemoto.setBounds(100, 100, 450, 300);
 		frmEjemploRemoto.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel panel_principal = new JPanel();
+		frmEjemploRemoto.getContentPane().add(panel_principal, BorderLayout.CENTER);
+		panel_principal.setLayout(new BorderLayout(0, 0));
 	}
 
 }
